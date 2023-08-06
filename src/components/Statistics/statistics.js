@@ -1,9 +1,9 @@
 import React from "react";
 import {Container,Title,List,StatLi} from "./statistics.style"
-export const Statistics = ({ items }) => {
+export const Statistics = ({ items,title}) => {
   return (
     <Container>
-      <Title>Upload stats</Title>
+        {title && <Title className="title">{title}</Title>}
 
       <List>
         {items.map((item) => (
